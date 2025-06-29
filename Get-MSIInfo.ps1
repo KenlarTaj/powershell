@@ -63,7 +63,7 @@
     Date        : 2025-06-29
     Tested on   : Windows 11 Pro 26100.4349 with PowerShell 5.1.26100.4202 and PowerShell 7.5.2
     Repository  : https://github.com/KenlarTaj/powershel
-    Contact     : kenlartaj@email.com
+    Contact     : kenlartaj@gmail.com
     Requirements: Run as user with access to registry and AppX packages.
     Limitations : AppX search may require administrative privileges for all users.
 #>
