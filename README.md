@@ -12,8 +12,8 @@ This repository contains PowerShell scripts designed to help automate and manage
 |----------------------------|------------------------------------------------------------------|
 | [Get-MSIInfo.ps1](#get-msiinfops1)            | Retrieve installed MSI/AppX apps or MSI file properties.         |
 | [Get-Resources.ps1](#get-resourcesps1)        | Gather system information, performance, and session/user data.   |
-| [GetLicensesByService.ps1](#getlicensesbyserviceps1)   | List Microsoft 365 licenses that include a specific service.     |
-| [GetServicesByLicense.ps1](#getservicesbylicenseps1)   | Display services included in a specific Microsoft 365 license SKU. |
+| [Get-LicensesByService.ps1](#get-licensesbyserviceps1)   | List Microsoft 365 licenses that include a specific service.     |
+| [Get-ServicesByLicense.ps1](#get-servicesbylicenseps1)   | Display services included in a specific Microsoft 365 license SKU. |
 ---
 
 ### Get-MSIInfo.ps1
@@ -77,7 +77,7 @@ Gathers system and user session information including performance metrics, OS da
 
 ---
 
-### GetLicensesByService.ps1
+### Get-LicensesByService.ps1
 
 Lists all Microsoft 365 license SKUs that include a specific service (e.g., Exchange, Teams, etc.).
 
@@ -90,9 +90,9 @@ Lists all Microsoft 365 license SKUs that include a specific service (e.g., Exch
 
 #### Usage Examples
 
-    .\GetLicensesByService.ps1 -ServiceName "EXCHANGE_S_FOUNDATION"
-    .\GetLicensesByService.ps1 -ServiceName "TEAMS1"
-    .\GetLicensesByService.ps1 -ServiceName "PowerBI"
+    .\Get-LicensesByService.ps1 -ServiceName "EXCHANGE_S_FOUNDATION"
+    .\Get-LicensesByService.ps1 -ServiceName "TEAMS1"
+    .\Get-LicensesByService.ps1 -ServiceName "PowerBI"
 
 #### Output Fields
 
@@ -104,7 +104,7 @@ Lists all Microsoft 365 license SKUs that include a specific service (e.g., Exch
 
 ---
 
-### GetServicesByLicense.ps1
+### Get=ServicesByLicense.ps1
 
 Lists all service plans included in a given Microsoft 365 license SKU.
 
@@ -116,9 +116,9 @@ Lists all service plans included in a given Microsoft 365 license SKU.
 
 #### Usage Examples
 
-    .\GetServicesByLicense.ps1 -License "ENTERPRISEPACK"
-    .\GetServicesByLicense.ps1 -License "M365_BUSINESS_PREMIUM"
-    .\GetServicesByLicense.ps1 -License "EMS" | Export-Csv ".\EMS_services.csv" -NoTypeInformation
+    .\Get-ServicesByLicense.ps1 -License "ENTERPRISEPACK"
+    .\Get-ServicesByLicense.ps1 -License "M365_BUSINESS_PREMIUM"
+    .\Get-ServicesByLicense.ps1 -License "EMS" | Export-Csv ".\EMS_services.csv" -NoTypeInformation
 
 #### Output Fields
 
