@@ -8,8 +8,8 @@ This repository contains PowerShell scripts designed to help automate and manage
 
 ## Scripts
 
-- Get-MSIInfo.ps1 — Retrieve installed MSI/AppX apps or MSI file properties.
-- Get-Resources.ps1 — Gather system information, performance, and session/user data.
+- Get-MSIInfo.ps1   - Retrieve installed MSI/AppX apps or MSI file properties.
+- Get-Resources.ps1 - Gather system information, performance, and session/user data.
 
 ---
 
