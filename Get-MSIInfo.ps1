@@ -102,7 +102,6 @@ function Get-InstalledAppByGuidOrName {
                 }
 
                 if ($match) {
-                    $item
                     $results += [PSCustomObject]@{
                         PSChildName          = $item.PSChildName
                         PackageFullName      = $null
@@ -187,8 +186,6 @@ function Get-MsiProperty {
         $MsiPath = Join-Path -Path $currentDir -ChildPath $MsiPath.Substring(2)
     }
 
-    Write-Host "Final MSI path: $MsiPath"
-
     # Check if the file exists before proceeding
     if (-not (Test-Path "$MsiPath")) {
         throw "File not found: $MsiPath"
@@ -228,7 +225,7 @@ function Main {
     # If -f is specified, show MSI file properties
     if ($f) {
         if ($SearchTerm) {
-            $results = Get-MsiProperty -MsiPath $SearchTerm 
+            $results = Get-MsiProperty -MsiPath $SearchTerm
         } else {
             throw "You must provide an MSI path with the -f parameter."
         }
