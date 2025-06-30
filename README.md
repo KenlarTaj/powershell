@@ -146,6 +146,6 @@ Distributed under the GPL License. See LICENSE file for details.
 
 ## Author
 
-Author :Kenlar Taj  
+Kenlar Taj  
 GitHub : https://github.com/KenlarTaj  
 E-mail : kenlartaj@gmail.com  
