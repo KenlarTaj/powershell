@@ -147,5 +147,5 @@ Distributed under the GPL License. See LICENSE file for details.
 ## Author
 
 Author :Kenlar Taj  
-GitHub : https://github.com/KenlarTaj
-E-mail : kenlartaj@gmail.com
+GitHub : https://github.com/KenlarTaj  
+E-mail : kenlartaj@gmail.com  
